@@ -1,0 +1,203 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"pmc_51km_desert",
+		"ca_modules_functions",
+		"cacharacters_e"
+	};
+	addOnsAuto[]=
+	{
+		"ca_modules_functions",
+		"cacharacters_e",
+		"pmc_51km_desert"
+	};
+	randomSeed=7110943;
+	class Intel
+	{
+		briefingName="PMC Shoot'em Up! v0.0.9";
+		briefingDescription="Random mission where starting and target locations change every restart.";
+		startWeather=0.14079106;
+		forecastWeather=0.13675004;
+		month=6;
+		day=1;
+		hour=0;
+		minute=0;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={255.64569,0.57566935,144.83813};
+					id=0;
+					side="LOGIC";
+					vehicle="FunctionsManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={161.20157,0.58584136,142.65564};
+					id=1;
+					side="WEST";
+					vehicle="US_Soldier_SL_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.59999996;
+				};
+				class Item1
+				{
+					position[]={164.20157,0.61844265,137.65564};
+					id=2;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item2
+				{
+					position[]={166.20157,0.57504517,137.65564};
+					id=3;
+					side="WEST";
+					vehicle="US_Soldier_GL_EP1";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item3
+				{
+					position[]={168.20157,0.52829117,137.65564};
+					id=4;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item4
+				{
+					position[]={170.20157,0.48339257,137.65564};
+					id=5;
+					side="WEST";
+					vehicle="US_Soldier_AT_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item5
+				{
+					position[]={172.20157,0.44596288,137.65564};
+					id=6;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item6
+				{
+					position[]={174.20157,0.42024571,137.65564};
+					id=7;
+					side="WEST";
+					vehicle="US_Soldier_GL_EP1";
+					player="PLAY CDG";
+					skill=0.2;
+				};
+				class Item7
+				{
+					position[]={176.20157,0.4091244,137.65564};
+					id=8;
+					side="WEST";
+					vehicle="US_Soldier_AR_EP1";
+					player="PLAY CDG";
+					skill=0.2;
+				};
+				class Item8
+				{
+					position[]={178.20157,0.41363141,137.65564};
+					id=9;
+					side="WEST";
+					vehicle="US_Soldier_AAR_EP1";
+					player="PLAY CDG";
+					skill=0.2;
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"pmc_51km_desert"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_51km_desert"
+	};
+	randomSeed=13013771;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		day=1;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"pmc_51km_desert"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_51km_desert"
+	};
+	randomSeed=6872919;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		day=1;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"pmc_51km_desert"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_51km_desert"
+	};
+	randomSeed=11215626;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		day=1;
+		hour=8;
+	};
+};

@@ -1,0 +1,343 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"pmc_rangers_cfg",
+		"PMC_hmmwv_cfg",
+		"pmc_soar_vehicles_cfg",
+		"pmc_technicals_cfg",
+		"pmc_trucks_cfg",
+		"pmc_mogadishu_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_rangers_cfg",
+		"PMC_hmmwv_cfg",
+		"pmc_soar_vehicles_cfg",
+		"pmc_technicals_cfg",
+		"pmc_trucks_cfg",
+		"pmc_mogadishu_cfg"
+	};
+	randomSeed=9463965;
+	class Intel
+	{
+		briefingName="PMC Somalia Quick Test";
+		briefingDescription="All vehicles at airbase, test them quickly.";
+		startWeather=0.39999998;
+		forecastWeather=0.25;
+		year=1993;
+		month=3;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7669.7808,10.611726,6101.1812};
+					id=0;
+					side="WEST";
+					vehicle="PMC_ranger_rifleman";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7675.1221,10.50318,6101.0405};
+					id=1;
+					side="WEST";
+					vehicle="PMC_ranger_rifleman";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7669.5464,10.592978,6097.1133};
+					id=20;
+					side="WEST";
+					vehicle="PMC_ranger_rifleman";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7674.8877,10.48722,6096.9727};
+					id=21;
+					side="WEST";
+					vehicle="PMC_ranger_rifleman";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=18;
+		class Item0
+		{
+			position[]={7712.2212,10.413697,6129.3086};
+			azimut=129.94545;
+			id=2;
+			side="EMPTY";
+			vehicle="PMC_hmmwv";
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={7705.0952,10.488149,6120.3379};
+			azimut=129.94545;
+			id=3;
+			side="EMPTY";
+			vehicle="PMC_hmmwv50";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={7697.5923,10.452718,6111.6851};
+			azimut=129.94545;
+			id=4;
+			side="EMPTY";
+			vehicle="PMC_hmmwvmk";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={7690.3403,10.231963,6102.561};
+			azimut=129.94545;
+			id=5;
+			side="EMPTY";
+			vehicle="PMC_hmmwvtow";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={7742.7051,7.6886868,6106.9141};
+			azimut=133.83676;
+			id=6;
+			side="EMPTY";
+			vehicle="PMC_soar_ah1";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={7728.5308,8.6484957,6090.4316};
+			azimut=133.83676;
+			id=7;
+			side="EMPTY";
+			vehicle="PMC_soar_ah6";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={7715.5195,9.6687422,6075.5864};
+			azimut=133.83676;
+			id=8;
+			side="EMPTY";
+			vehicle="PMC_soar_mh6";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={7699.7935,9.9940939,6059.3535};
+			azimut=133.83676;
+			id=9;
+			side="EMPTY";
+			vehicle="PMC_soar_mh60";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={7680.8374,10.586491,6039.0371};
+			azimut=133.83676;
+			id=10;
+			side="EMPTY";
+			vehicle="PMC_soar_mh60mg";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={7738.9287,10.594693,6158.3965};
+			azimut=132.08157;
+			id=11;
+			side="EMPTY";
+			vehicle="PMC_Offroad_DSHKM";
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={7733.7075,10.673246,6151.9224};
+			azimut=132.08157;
+			id=12;
+			side="EMPTY";
+			vehicle="PMC_Offroad_SPG9";
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={7728.1392,10.600193,6145.7627};
+			azimut=132.08157;
+			id=13;
+			side="EMPTY";
+			vehicle="PMC_pickup_pk";
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={7662.5571,10.731367,6078.2974};
+			azimut=137.88286;
+			id=14;
+			side="EMPTY";
+			vehicle="PMC_truck5t";
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={7644.0874,10.98,6062.2505};
+			azimut=137.88286;
+			id=15;
+			side="EMPTY";
+			vehicle="PMC_truck5treammo";
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={7634.311,10.98,6053.6279};
+			azimut=137.88286;
+			id=16;
+			side="EMPTY";
+			vehicle="PMC_truck5trefuel";
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={7671.1411,10.561407,6085.8433};
+			azimut=137.88286;
+			id=17;
+			side="EMPTY";
+			vehicle="PMC_truck5topen";
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={7625.2388,10.98,6045.4263};
+			azimut=137.88286;
+			id=18;
+			side="EMPTY";
+			vehicle="PMC_truck5trepair";
+			skill=0.60000002;
+		};
+		class Item17
+		{
+			position[]={7654.0913,10.899,6070.8638};
+			azimut=137.88286;
+			id=19;
+			side="EMPTY";
+			vehicle="PMC_truck5tmg";
+			skill=0.60000002;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"pmc_mogadishu_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_mogadishu_cfg"
+	};
+	randomSeed=2216798;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=1993;
+		month=3;
+		hour=12;
+		minute=0;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"pmc_mogadishu_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_mogadishu_cfg"
+	};
+	randomSeed=4209985;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=1993;
+		month=3;
+		hour=12;
+		minute=0;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"pmc_mogadishu_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"pmc_mogadishu_cfg"
+	};
+	randomSeed=10107897;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=1993;
+		month=3;
+		hour=12;
+		minute=0;
+	};
+};
