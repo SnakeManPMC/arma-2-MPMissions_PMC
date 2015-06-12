@@ -1,3 +1,17 @@
+/*
+
+	PMC Create Searching Insurgents
+
+Syntax:
+[_targetpoint] execVM "PMC\PMC_Create_Searching_Insurgents.sqf";
+
+Requires:
+-
+
+Returns:
+-
+
+*/
 
 private
 [
@@ -9,18 +23,18 @@ private
 
 _direction = random 360;
 _distance = (500 + random 1000);
-_respawnpoint = [((PMC_crash_site_location select 0)  + (_distance * sin _direction)), ((PMC_crash_site_location select 1) + (_distance * cos _direction)), 0];
+_respawnpoint = [((_targetpoint select 0)  + (_distance * sin _direction)), ((_targetpoint select 1) + (_distance * cos _direction)), 0];
 
 _grp = objNull;
 _grp = createGroup east;
 waitUntil {!(isNull _grp)};
 
-"GUE_Soldier_CO" createUnit [_respawnpoint, _grp, "", 0.2, "SERGEANT"];
-"GUE_Soldier_GL" createUnit [_respawnpoint, _grp, "", 0.2, "CORPORAL"];
-"GUE_Soldier_AR" createUnit [_respawnpoint, _grp, "", 1, "CORPORAL"];
-"GUE_Soldier_1" createUnit [_respawnpoint, _grp, "", 0.2, "CORPORAL"];
-"GUE_Soldier_3" createUnit [_respawnpoint, _grp, "", 0.2, "CORPORAL"];
-"GUE_Soldier_2" createUnit [_respawnpoint, _grp, "", 0.2, "CORPORAL"];
+"Ins_Worker2" createUnit [_respawnpoint, _grp, "", 0.2, "SERGEANT"];
+"INS_Woodlander3" createUnit [_respawnpoint, _grp, "", 0.2, "CORPORAL"];
+"INS_Villager3" createUnit [_respawnpoint, _grp, "", 0.2, "CORPORAL"];
+"INS_Woodlander2" createUnit [_respawnpoint, _grp, "", 0.2, "CORPORAL"];
+"INS_Woodlander1" createUnit [_respawnpoint, _grp, "", 0.2, "CORPORAL"];
+"INS_Villager4" createUnit [_respawnpoint, _grp, "", 0.2, "CORPORAL"];
 
 _grp setbehaviour "AWARE";
 _grp setcombatmode "RED";

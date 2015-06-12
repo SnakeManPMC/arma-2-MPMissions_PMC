@@ -18,7 +18,7 @@ if (isServer) then
 	"crash_site" setMarkerPos PMC_crash_site_location;
 	
 	// add the searching insurgent party
-	[] execVM "PMC\PMC_Create_Searching_Insurgents.sqf";
+	[PMC_crash_site_location] execVM "PMC\PMC_Create_Searching_Insurgents.sqf";
 };
 
 // set our weather using multiplayer parameter array

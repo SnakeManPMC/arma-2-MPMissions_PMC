@@ -1,3 +1,17 @@
+/*
+
+	PMC Create Searching Insurgents
+
+Syntax:
+[_targetpoint] execVM "PMC\PMC_Create_Searching_Insurgents.sqf";
+
+Requires:
+-
+
+Returns:
+-
+
+*/
 
 private
 [
@@ -9,7 +23,7 @@ private
 
 _direction = random 360;
 _distance = (500 + random 1000);
-_respawnpoint = [((PMC_crash_site_location select 0)  + (_distance * sin _direction)), ((PMC_crash_site_location select 1) + (_distance * cos _direction)), 0];
+_respawnpoint = [((_targetpoint select 0)  + (_distance * sin _direction)), ((_targetpoint select 1) + (_distance * cos _direction)), 0];
 
 _grp = objNull;
 _grp = createGroup east;
