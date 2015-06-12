@@ -6,7 +6,7 @@ Syntax:
 [respawnpoint] execVM "PMC\PMC_Create_Convoy_OPFOR";
 
 Requires:
--
+PMC\PMC_killed.sqf
 
 Returns:
 -
@@ -16,9 +16,9 @@ Returns:
 //PMC_Create_Convoy_OPFOR.sqf
 
 
-private ["_grp","_PMC_CreateConvoyVehicles","_respawnpoint"];
+private ["_grp","_PMC_CreateConvoyOPFORVehicles","_respawnpoint"];
 
-_PMC_CreateConvoyVehicles =
+_PMC_CreateConvoyOPFORVehicles =
 {
 	private ["_grp","_wp","_vcl","_respawnpoint","_crewType","_ran","_targetpoint"];
 	_respawnpoint = _this select 0;
@@ -185,7 +185,7 @@ _respawnpoint = _this select 0;
 
 while {true} do
 {
-	_grp = [_respawnpoint] call _PMC_CreateConvoyVehicles;
+	_grp = [_respawnpoint] call _PMC_CreateConvoyOPFORVehicles;
 
 	sleep 10;
 	// we wait until the convoy group is completely dead.
