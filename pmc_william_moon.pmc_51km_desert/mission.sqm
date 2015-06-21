@@ -24,7 +24,7 @@ class Mission
 	randomSeed=8371715;
 	class Intel
 	{
-		briefingName="PMC WIlliam Moon";
+		briefingName="PMC William Moon";
 		briefingDescription="AH1 Cobras attack enemy rally point, neutralize them all.";
 		startWeather=0.10000002;
 		forecastWeather=0.30000001;
