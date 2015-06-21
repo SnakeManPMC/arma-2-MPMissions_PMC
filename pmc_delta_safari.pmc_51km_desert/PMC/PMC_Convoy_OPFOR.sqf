@@ -171,7 +171,8 @@ while {true} do
 	_PMC_convoyOPFORtargets = PMC_targets;
 
 	// do the random patrolling waypoints
-	_wp = 0;
+	// twenty waypoints is more than enough
+	_wp = 20;
 	while {count _PMC_convoyOPFORtargets > 0} do
 	{
 		// choose random target.
